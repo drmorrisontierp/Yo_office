@@ -52,6 +52,15 @@ const populateTable = (num) => {
   return tableList;
 };
 
+const repeat = (word, amount) => {
+  let sentence = "";
+  let x = 0;
+  while (x < amount) {
+    sentence += word;
+    x++;
+  }
+  return sentence;
+};
 
 async function insertHTML() {
   await Word.run(async (context) => {
@@ -59,7 +68,13 @@ async function insertHTML() {
     const tableData = populateTable(num);
     const widths = ["1.5cm", "2.8cm", "1.1cm", "2.7cm", "1cm", "1.5cm", "2.8cm", "1.1cm", "2.7cm"]
     let html =
-      '<table style="font-size:20pt;">';
+    `<div>
+      <p style="font-size:16pt;">
+        Namn: ___________________ 
+        ${repeat("&nbsp",20)}
+        Tid: __________________
+      </p>
+    </div><br/><table style="font-size:20pt;">`;
     for (let x = 0; x < tableData.length; x++) {
       let rowHTML = "<tr>";
       for (let y = 0; y < tableData[x].length; y++) {
