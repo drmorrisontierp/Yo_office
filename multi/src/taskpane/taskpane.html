@@ -30,13 +30,94 @@
     </section>
     <main id="app-body" class="ms-welcome__main" style="display: none;">
         <div>
-            <form>
-                <label id="input-label" for="number-one">10</label>
-                <input id="input" title="number-one" type="range" min="4" max="12" value="10"/>
-        </form>
-        <button class="ms-Button" id="insert-html">Insert HTML</button><br/>
-
-        </div>
+            <div>
+                <div class="dropdown" id="subtraction">
+                    <button class="dropbtn">Subtraktion</button>
+                    <div class="dropdown-content">
+                        <div id="sub_one" class="choice">Subtraktion utan växling</div>
+                        <div id="sub_two" class="choice">Subtraktion med växling</div>
+                        <div id="sub_one_grid" class="choice">Subtraktion utan växling (rutnät)</div>
+                        <div id="sub_two_grid" class="choice">Subtraktion med växling (rutnät)</div>
+                    </div>
+                </div>
+                <div class="dropdown" id="addition">
+                    <button class="dropbtn">Addition</button>
+                    <div class="dropdown-content">
+                        <div id="add_one" class="choice">Addition utan minnessiffror</div>
+                        <div id="add_two" class="choice">Addition med minnessiffror</div>
+                        <div id="add_one_grid" class="choice">Addition utan minnessiffror (rutnät)</div>
+                        <div id="add_two_grid" class="choice">Addition med minnessiffror (rutnät)</div>
+                    </div>
+                </div>
+                <div class="dropdown" id="multiplication">
+                    <button class="dropbtn">Multiplikation</button>
+                    <div class="dropdown-content">
+                        <div id="multi_one" class="choice">Kort multiplikation</div>
+                        <div id="multi_two" class="choice">Lång multiplikation</div>
+                        <div id="multi_one_grid" class="choice">Kort multiplikation (rutnät)</div>
+                        <div id="multi_two_grid" class="choice">Lång multiplikation (rutnät)</div>
+                    </div>
+                </div>
+                <div class="dropdown" id="division">
+                    <button class="dropbtn">Division</button>
+                    <div class="dropdown-content">
+                        <div id="div_one" class="choice">Kort division med heltal kvot (rutnät matchar svar)</div>
+                        <div id="div_one_no" class="choice">Kort division med heltal kvot</div>
+                        <div id="div_two" class="choice">Kort division med decimaltal kvot (rutnät matchar svar)</div>
+                        <div id="div_two_no" class="choice">Kort division med decimaltal kvot</div>
+                        <div id="div_one_grid" class="choice">Kort division med heltal kvot (rutnät)</div>
+                        <div id="div_two_grid" class="choice">Kort division med decimaltal kvot (rutnät)</div>
+                    </div>
+                </div>
+                <div class="dropdown" id="tables">
+                    <button class="dropbtn">Tables</button>
+                    <div class="dropdown-content">
+                        <div id="slider-container">
+                            <div id="slider" class="slider">
+                                <div class="thumb" id="left"></div>
+                                <div class="thumb" id="right"></div>
+                            </div>
+                            <div id="scale">
+                                <div class="grade">|</div>
+                                <div class="grade">|</div>
+                                <div class="grade">|</div>
+                                <div class="grade">|</div>
+                                <div class="grade">|</div>
+                                <div class="grade">|</div>
+                                <div class="grade">|</div>
+                                <div class="grade">|</div>
+                                <div class="grade">|</div>
+                                <div class="grade">|</div>
+                                <div class="grade">|</div>
+                                <div class="grade">|</div>
+                            </div>
+                            <div id="units">
+                                <div class="unit" id="unit-one">&nbsp1</div>
+                                <div class="unit" id="unit-two">&nbsp2</div>
+                                <div class="unit" id="unit-three">&nbsp3</div>
+                                <div class="unit" id="unit-four">&nbsp4</div>
+                                <div class="unit" id="unit-five">&nbsp5</div>
+                                <div class="unit" id="unit-six">&nbsp6</div>
+                                <div class="unit" id="unit-seven">&nbsp7</div>
+                                <div class="unit" id="unit-eight">&nbsp8</div>
+                                <div class="unit" id="unit-nine">&nbsp9</div>
+                                <div class="unit" id="unit-ten">10</div>
+                                <div class="unit" id="unit-eleven">11</div>
+                                <div class="unit" id="unit-twelve">12</div>
+                            </div>
+                        </div>
+                        <div id="multi" class="choice">Multiplikations övningar</div>
+                    </div>
+                </div>
+                <div class="dropdown" id="Utilities">
+                    <button class="dropbtn">Utilities</button>
+                    <div class="dropdown-content">
+                        <div id="insert-facit" class="choice">Insert facit</div>
+                        <div id="clear" class="choice">Clear</div>
+                        
+                    </div>
+                </div>
+            </div>
     </main>
 </body>
 
